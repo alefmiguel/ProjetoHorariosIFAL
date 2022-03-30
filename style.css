@@ -63,7 +63,7 @@ section {
 }
 
 .topicos {
-  font-size: clamp(30px, 5vw, 45px);
+  font-size: clamp(25px, 4vw, 35px);
 }
 
 .textoOBJETIVO {
