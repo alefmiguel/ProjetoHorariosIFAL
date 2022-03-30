@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+
+
+.cor_curso_informatica{
+  color: #b505e6
+}
+
+.cor_curso_eletronica{
+  color: green
+}
+
+.cor_curso_eletrotecnica{
+  color: #00d5ff
+}
+
+.cor_curso_quimica{
+  color: red
+}
+
+.cor_curso_edificacoes{
+  color: black
+}
+
+.cor_curso_estradas{
+  color: #636363
+}
+
+.cor_curso_mecanica{
+  color: yellow
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #537fc6;
+  text-align: justify;
+  padding: 0;
+  margin: 0;
+}
+
+.h1principal {
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  margin: 1em 0;
+  font-size: clamp(20px, 3vw, 45px);
+  width: 100vw;
+}
+
+section {
+  padding: 1em;
+  justify-content: center;
+  background-color: white;
+  height: max-content;
+  font-family: 'Roboto', sans-serif;
+  width: 100vw;
+}
+
+.topicos {
+  font-size: clamp(30px, 5vw, 45px);
+}
+
+.textoOBJETIVO {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(12px, 2vw, 45px);
+}
