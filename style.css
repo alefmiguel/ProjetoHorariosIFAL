@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@800&display=swap');
 
 
 .cor_curso_informatica{
@@ -39,7 +39,7 @@
 }
 
 body {
-  background-color: #537fc6;
+  background-color: #f53232;
   text-align: justify;
   padding: 0;
   margin: 0;
@@ -47,10 +47,19 @@ body {
 
 .h1principal {
   text-align: center;
-  font-family: 'Press Start 2P', cursive;
-  margin: 1em 0;
-  font-size: clamp(20px, 3vw, 45px);
+  font-family: 'Sora', sans-serif;
+  margin: 0.5em 0;
+  font-size: clamp(40px, 5vw, 95px);
   width: 100vw;
+}
+
+.h1principalhorarios {
+  text-align: center;
+  font-family: 'Sora', sans-serif;
+  margin: 0.5em 0;
+  font-size: clamp(40px, 5vw, 95px);
+  width: 100vw;
+  color: black;
 }
 
 section {
@@ -63,10 +72,10 @@ section {
 }
 
 .topicos {
-  font-size: clamp(25px, 4vw, 35px);
+  font-size: clamp(25px, 3vw, 35px);
 }
 
 .textoOBJETIVO {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: clamp(12px, 2vw, 45px);
+  font-size: clamp(15px, 2vw, 25px);
 }
