@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 .cor_curso_informatica{
   color: #b505e6
@@ -39,7 +39,7 @@
 }
 
 body {
-  background-color: #7158cc;
+  background: #000000;
   text-align: justify;
   padding: 0;
   margin: 0;
@@ -51,6 +51,7 @@ body {
   margin: 0.5em 0;
   font-size: clamp(40px, 5vw, 95px);
   width: 100vw;
+  color: rgb(19, 197, 34);
 }
 
 .h1principalhorarios {
@@ -59,23 +60,65 @@ body {
   margin: 0.5em 0;
   font-size: clamp(40px, 5vw, 95px);
   width: 100vw;
-  color: black;
+  color: rgb(209, 68, 68);
 }
 
 section {
   padding: 1em;
   justify-content: center;
   background-color: white;
-  height: max-content;
+  width: max-content;
   font-family: 'Roboto', sans-serif;
   width: 100vw;
 }
 
 .topicos {
   font-size: clamp(25px, 3vw, 35px);
+  font-family: 'Sora', sans-serif;
 }
 
 .textoOBJETIVO {
   font-family: 'Space Grotesk', sans-serif;
   font-size: clamp(15px, 2vw, 25px);
+}
+
+a.logo {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(246, 246, 246);
+    cursor: pointer;
+    font-size: clamp(15px, 2vw, 25px);
+}
+
+.textoMenu:first-child:hover{
+    color: rgb(19, 197, 34);
+}
+
+.textoMenu:hover{
+    color: rgb(223, 79, 54);
+}
+
+.textoMenu {
+    font-family: 'Noto Sans', sans-serif;
+    transition: 230ms linear;
+    opacity: 0.9;
+}
+
+.Word2topicos {
+    color: rgb(19, 197, 34);
+}
+
+.Word1topicos {
+    color: rgb(209, 68, 68)
 }
