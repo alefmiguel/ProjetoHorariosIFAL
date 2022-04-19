@@ -1,3 +1,5 @@
-document.querySelector(".hamburguer").addEventListener("click" , () =>
-	document.querySelector(".conteudo").classList.toggle("show-menu")
-);
+var nome = prompt("Qual seu nome?");
+
+alert("Olá, " + nome + "!"); 
+
+alert('Seja bem vindo ao nosso site!');
