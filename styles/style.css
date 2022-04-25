@@ -5,12 +5,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
+:root {
+    --verde: green;
+    --roxo: purple;
+}
+
 .cor_curso_informatica{
-  color: purple;
+  color: var(purple);
 }
 
 .cor_curso_eletronica{
-  color: green
+  color: var(green);
 }
 
 .cor_curso_eletrotecnica{
@@ -37,12 +42,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: #f7e8e8;
+  background: #ffffff;
   text-align: justify;
   padding: 0;
   margin: 0;
@@ -62,7 +69,6 @@ body {
   text-align: center;
   font-family: 'Sora', sans-serif;
   margin: 0.5em 0;
-  font-size: clamp(40px, 5vw, 95px);
   width: 100vw;
   color: rgb(209, 68, 68);
 }
@@ -83,7 +89,7 @@ section {
 
 .textoOBJETIVO {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: clamp(16px, 3vw, 22px);
+  font-size: clamp(16px, 2vw, 22px);
   text-align: justify;
   color: white;
 }
@@ -105,34 +111,78 @@ a {
 }
 
 .container {
+    width: 200px;
+    position: fixed;
+    right: 0;
+    top: 80px;
+    z-index: 999;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
-    background-color: rgb(212, 212, 212);
+    background-color: white;
     cursor: pointer;
-    font-size: clamp(15px, 2vw, 25px);
+    font-size: 1rem;
+    transition: right 250ms linear;
 }
 
-.container > li > a:hover {
+.container[data-visible="false"]{
+    right: -100%;
+}
+
+
+.container > li:first-child{
+  padding-block: 1rem;
+  background: rgb(19, 197, 34);
+}
+
+.container > li{
+  padding-block: 1rem;
+  background: rgb(209, 68, 68);
+  width: 100%;
+}
+
+.container > li:hover {
   transition: 230ms linear;
-  color: rgb(209, 68, 68);
+  width: 120%;
+  opacity: 1;
+} 
+
+.container > li > a {
+  width: 100%;
+  transition: 230ms linear;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 } 
 
 .container > li > a {
   transition: 230ms linear;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-} 
+  color: white;
+}
 
-.container > li:first-of-type > a:hover {
-  transition: 230ms linear;
-  color: rgb(19, 197, 34);
-} 
+.menu-btn{
+  cursor: pointer;
+  text-align: center;
+  padding-top: .4rem;
+  position: fixed;
+  font-size: 2rem;
+  color: white;
+  background: rgb(223, 79, 54);
+  border-radius: 50%;
+  aspect-ratio: 1;
+  width: 45px;
+  right: 20px;
+  top: 30px;
+}
 
-.textoMenu:first-child:hover{
+.textoMenu:first-child{
     color: rgb(19, 197, 34);
 }
 
-.textoMenu:hover{
+.textoMenu{
     color: rgb(223, 79, 54);
 }
 
@@ -147,7 +197,7 @@ a {
 }
 
 .Word1topicos {
-    color: rgb(209, 68, 68);
+    color: rgb(19, 197, 34);
 }
 
 .linkCONTATO {
@@ -157,7 +207,7 @@ a {
 }
 
 a.linkCONTATO:visited {
-  color: black;
+  color: white;
 }
 
 main {
@@ -198,6 +248,7 @@ main {
   overflow: hidden;
   justify-content: center;
   position: relative;
+  margin-bottom: -4px;
 }
 
 .banner .content {
@@ -215,81 +266,10 @@ main {
   max-width: 100%;
 }
 
-.hamburguer {
-  width: 2rem;
-  height: 2rem;
-  position: fixed;
-  z-index: 5;
-  right: 2rem;
-  top: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-}
-
-.show-menu .hamburguer {
-  right: 16rem;
-}
-
-.line {
-  width: 100%;
-  height: .1rem;
-  padding: 1px;
-  border-radius: 10px;
-  background-color: tomato;
-  box-shadow: 0.1rem 0.1rem 3px rgba(0, 0, 0, 0.788);
-  transition: transform .7s;
-}
-
-.show-menu #line1 {
-  transform: rotate(45deg) translate(.4rem, .9rem);
-  background-color: rgb(201, 44, 148);
-  box-shadow: none;
-}
-
-.show-menu #line2 {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.show-menu #line3 {
-  transform: rotate(45deg) translate(.4rem, .9rem);
-  background-color: rgb(72, 88, 88);
-  box-shadow: none;
-}
-
-.sidebar {
-  width: 20rem;
-  height: 100vh;
-  background-color: linear-gradient(329.54deg, #111111 0%, #222222 100%);
-  box-shadow: 10px 5px 15px 10px rgba(0, 0, 0, 0.582);
-  position: fixed;
-  top: 0;
-  right: -20rem;
-  transition: all .8s;
-}
-
-.menu {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.menu-item {
-  text-align: center;
-  margin-bottom: .5rem;
-}
-
-.menu-link {
-  font-family: sans-serif;
-  font-size: 2rem;
-  color: rgb(177, 34, 34);
-  transition: color .7s;
-}
-
-.menu-link:hover {
-  color: rgb(97, 28, 177);
-  transition: color .7s;
+@media (max-width: 500px){
+  .h1principal{
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 1rem;
+  }
 }
