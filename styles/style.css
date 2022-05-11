@@ -49,7 +49,7 @@ html {
 }
 
 body {
-  background: #ffffff;
+  background: #000000;
   text-align: justify;
   padding: 0;
   margin: 0;
@@ -79,6 +79,7 @@ section {
   background-color: rgb(0, 0, 0);
   font-family: 'Roboto', sans-serif;
   width: 100%;
+  margin-bottom: 1.5em;
 }
 
 .topicos {
@@ -228,15 +229,17 @@ main {
   transition: 0.3s;
   border-radius: 5px;
   margin: 1em;
+  position: relative;
 }
 
 .modal:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 1px 3px 5px 0 white;
+  top: -2px;
 }
 
 .modalcards {
   padding: 4px 16px;
-} 
+}
 
 .img {
   border-radius: 5em 5em 0 0;
@@ -272,4 +275,8 @@ main {
     text-align: left;
     margin-left: 1rem;
   }
+}
+
+.modallink:hover {
+  transition: 500ms;
 }
